@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Images 1 Word</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="score">
+            <h1 id="score"><i class="fa-solid fa-coins"></i>0</h1>
+        </div>
+
+        <!-- <div class="settings">
+            <select name="lang" id="lang">
+                <option value="en">EN</option>
+                <option value="it">IT</option>
+            </select>
+        </div> -->
+    </div>
+
+    <div class="loading"></div>
+
+    <div class="image-box">
+        <div class="image"><img id="img-1" src="https://i.gifer.com/ZKZg.gif"></div>
+        <div class="image"><img id="img-2" src="https://i.gifer.com/ZKZg.gif"></div>
+        <div class="image"><img id="img-3" src="https://i.gifer.com/ZKZg.gif"></div>
+        <div class="image"><img id="img-4" src="https://i.gifer.com/ZKZg.gif"></div>
+    </div>
+
+    <div class="main-box">
+        <button id="next-word-btn" onclick="nextWord()">Next Word</button>
+
+        <div class="word-box">
+        </div>
+    
+        <div class="letter-box">
+        </div>
+
+        <div class="giveup-btn" onclick="giveup()">
+            Give Up?
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="show-letter-bonus" onclick="showLetter()">
+            <div class="price">20</div>
+            <h1><i class="fa-solid fa-lightbulb"></i></h1>
+        </div>
+        <div class="delete-letters-bonus" onclick="removeFakeLetter()">
+            <div class="price">10</div>
+            <h1><i class="fa-solid fa-bomb"></i></h1>
+        </div>
+
+        <div class="show-word-bonus" onclick="showWord()"> 
+            <div class="price">100</div>
+            <h1><i class="fa-solid fa-forward"></i></h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
